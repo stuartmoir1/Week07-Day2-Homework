@@ -16,7 +16,12 @@ public class WordCounter {
 
     // Methods
 
-    public int countWords(String words){
-        return 9;
+    // Method adapted from http://bit.ly/2vM3PB4.
+    public int countWords(String text){
+        // Remove leading and trailing spaces, and duplicate spaces between words.
+        String trimmedText = text.trim();
+        // Handle empty strings.
+        int numWords = trimmedText.isEmpty() ? 0 : trimmedText.split("\\s+").length;
+        return numWords;
     }
 }

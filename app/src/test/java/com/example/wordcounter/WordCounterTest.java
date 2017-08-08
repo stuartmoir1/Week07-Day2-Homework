@@ -15,7 +15,7 @@ public class WordCounterTest {
     @Test
     public void testGetWordCount(){
         wordCounter = new WordCounter();
-        String words = "The quick brown fox jumps over the lazy dog";
-        assertEquals(9, wordCounter.countWords(words));
+        String text = "The quick brown fox jumps over the lazy dog";
+        assertEquals(9, wordCounter.countWords(text));
     }
 }
