@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WordCounter</string>
+    <string name="result_activity_title">Here is your word count...</string>
 </resources>
